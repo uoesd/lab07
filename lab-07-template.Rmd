@@ -28,7 +28,9 @@ evals<-read.csv("data/evals.csv", row.names=1)
 ### Exercise 1
 
 ```{r viz-score}
-# add code here
+evals %>%
+  ggplot(aes(x=course_id,y=score)) +
+  geom_line()
 ```
 
 *Add your narrative here.*
